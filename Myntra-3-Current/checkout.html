@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+
+    <!-- google fonts  -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- font-awesome-css-for-icons  -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- CSS files  -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/checkout.css">
+    
+    <!-- JS file  -->
+    <script src="js/checkout.js" async></script>
+</head>
+<body>
+    <!-- header  -->
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="img/logo.png" width="125px">
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="accounts.html">Account</a></li>
+                </ul>
+            </nav>
+            <img src="img/menu.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+    </div>
+    <!-- Checkout form  -->
+    <br><br><br>
+    <div class="row">
+        <div class="col-75">
+            <div class="container">
+                <form>
+                    <div class="row">
+                        <div class="col-50"><br>
+                            <h3>Billing Address</h3>
+                            <label for="fname"> Full Name</label>
+                            <input type="text" id="fname" name="firstname" placeholder="John M. Doe">
+                            <label for="email"> Email</label>
+                            <input type="text" id="email" name="email" placeholder="john@example.com">
+                            <label for="adr"></i> Address</label>
+                            <input type="text" id="adr" name="address" placeholder="542 W. 15th Street">
+                            <label for="city"></i> City</label>
+                            <input type="text" id="city" name="city" placeholder="New York">
+
+                            <div class="row">
+                                <div class="col-50" style="padding-right: 10px;">
+                                  <label for="state">State</label>
+                                  <input type="text" id="state" name="state" placeholder="NY">
+                                </div>
+                                <div class="col-50">
+                                  <label for="zip">Zip</label>
+                                  <input type="text" id="zip" name="zip" placeholder="10001">
+                                </div>
+                              </div>
+                        </div>
+    
+                        <div class="col-50" style="padding-left: 20px;padding-top: 10px;">
+                            <h3>Payment</h3>
+                            <label for="fname">Accepted Cards</label>
+                            <div class="icon-container">
+                                <i class="fa fa-cc-visa" style="color:navy;"></i>
+                                <i class="fa fa-cc-amex" style="color:blue;"></i>
+                                <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                                <i class="fa fa-cc-discover" style="color:orange;"></i>
+                            </div>
+                            <label for="cname">Name on Card</label>
+                            <input type="text" id="cname" name="cardname" placeholder="John More Doe">
+                            <label for="ccnum">Credit card number</label>
+                            <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+                            <label for="expmonth">Exp Month</label>
+                            <input type="text" id="expmonth" name="expmonth" placeholder="September">
+                            
+                            <div class="row">
+                                <div class="col-50" style="padding-right: 10px;">
+                                  <label for="expyear">Exp Year</label>
+                                  <input type="text" id="expyear" name="expyear" placeholder="2018">
+                                </div>
+                                <div class="col-50">
+                                  <label for="cvv">CVV</label>
+                                  <input type="text" id="cvv" name="cvv" placeholder="352">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+        <div class="col-25">
+            <div class="checkout-container">
+                
+            </div>
+        </div>
+    </div>
+    <!-- row end  -->
+    
+    <div class="input-addr">
+        <label>
+            <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+        </label><br>
+    </div>
+    <div class="btn-right">
+        <a href="paymentSuccessfull.html">
+            <input type="submit" value="Place Order &#8594;" class="checkout-btn">
+        </a>
+        
+    </div>
+   
+    
+
+    <!-- footer  -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download App for Android and ios mobile phone.</p>
+                    <div class="app-logo">
+                        <img src="img/play-store.png" alt="">
+                        <img src="img/app-store.png" alt="">
+                    </div>
+                </div>
+
+                <div class="footer-col-2">
+                    <img src="img/logo.png" alt="">
+                    <p>Myntra is a one stop shop for all your fashion and lifestyle needs.</p>
+                </div>
+
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affliate</li>
+                    </ul>
+                </div>
+
+                <div class="footer-col-4">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li>facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>YouTube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright @2020</p>
+        </div>
+    </div>
+    <script>
+        // MenuItems
+        var MenuItems = document.getElementById("MenuItems");
+
+        MenuItems.style.maxHeight = "0px";
+
+        function menutoggle(){
+            if(MenuItems.style.maxHeight == "0px"){
+                MenuItems.style.maxHeight = "400px";
+            }else{
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+    </script>
+    
+</body>
+</html>

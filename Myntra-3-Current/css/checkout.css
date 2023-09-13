@@ -1,0 +1,85 @@
+
+/* checkout  */
+.col-75{
+    flex-basis: 75%;
+}
+.col-50{
+    flex-basis: 50%;
+}
+.col-25{
+    flex-basis: 25%;
+}
+span.price {
+    float: right;
+    color: grey;
+}
+.checkout-container{
+    padding: 5px 20px 15px 20px;
+    border: 1px solid lightgrey;
+    border-radius: 3px;
+}
+.checkout-container h4{
+    font-size: 20px;
+    font-weight: 600;
+}
+.col-50 input[type=text] {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+/* .col-50 label{
+    margin-bottom: 10px;
+    display: block;
+} */
+.icon-container {
+    margin-bottom: 20px;
+    padding: 7px 0;
+    font-size: 24px;
+}
+.checkout-btn{
+    background: #ff523b;
+    color: #fff;
+    padding: 10px 35px;
+    margin: 25px 0;
+    border-radius: 30px;
+    border-color: orangered;
+    transition: background 0.5s;
+    text-align: center;
+    font-size: 17px;
+}
+.checkout-btn:hover{
+    background: #563434;
+}
+.input-addr{
+    padding-left: 430px; 
+    font-size: 17px;
+}
+.btn-right{
+    padding-left: 800px; 
+    font-size: 17px;
+}
+@media (max-width: 800px) {
+    .row {
+      flex-basis: auto;
+    }
+    .col-50{
+        flex-basis: 100%;
+    }
+    .col-25{
+        flex-basis: 100%;
+        padding: 10px 10px;
+    }
+    .col-25 .col-50 .col-75{
+         margin-bottom: 20px;
+    }
+    .input-addr{
+        padding-left: 10px; 
+        font-size: 10px;
+    }
+    .btn-right{
+        padding-left: 10px; 
+        font-size: 10px;
+    }
+  }
